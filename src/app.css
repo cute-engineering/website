@@ -1,0 +1,93 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  :root {
+    --daccent: #ffb800;
+    --accent: #f59e0b;
+
+    --background: #fafaf6;
+    --over-background: #001011;
+    --over-accent: #001011;
+  }
+
+  @layer base {
+     
+    html {
+   font-family: Fredoka, Inter, system-ui, sans-serif;
+      line-height: 1.5;
+    }
+    h1 {
+      @apply font-bold;
+
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      color: var(--over-background);
+    }
+    h2 {
+      @apply font-bold;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      color: var(--over-background);
+    }
+    h3 {
+      @apply font-bold;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: var(--over-background);
+    }
+    h4 {
+      @apply font-bold;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: var(--over-background);
+    }
+
+    a {
+      
+      color: var(--over-accent);
+      @apply decoration-4;
+      @apply decoration-amber-500;
+      @apply underline;
+    }
+
+    .granular {
+      @apply border-b border-b-slate-900/50;
+      @apply border-t border-t-slate-50/50;
+    }
+    a:hover {
+      color: var(--accent);
+      @apply decoration-4;
+      text-decoration-color: var(--over-accent);
+      @apply underline;
+    }
+
+    button {
+      @apply decoration-4;
+      @apply decoration-amber-500;
+      @apply underline;
+
+      @apply rounded-xl bg-amber-500 py-2 px-4;
+      @apply ease-in-out duration-300;
+      @apply shadow-lg shadow-amber-500/0 ;
+      @apply granular;
+    }
+
+    button:hover 
+    {
+      @apply decoration-4;
+      @apply decoration-amber-500;
+      @apply underline;
+
+      @apply text-white;
+      @apply shadow-lg shadow-amber-500/50 ;
+    /*  @apply bg-amber-600; */
+    }
+  }
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
