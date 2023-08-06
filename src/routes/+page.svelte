@@ -24,14 +24,14 @@
 
     <nav class="mx-auto md:my-auto">
       <ol class="w-fit py-4 max-w-prose flex flex-row md:flex-col">
-        <li><h2 class="p-4"><a href="urmom.zip">About</a></h2></li>
-        <li><h2 class="p-4"><a href="urmom.zip">Projects</a></h2></li>
-        <li><h2 class="p-4"><a href="urmom.zip">Blog</a></h2></li>
+        <li><h2 class="p-4"><a href="about">About</a></h2></li>
+        <li><h2 class="p-4"><a href="#projects">Projects</a></h2></li>
+        <li><h2 class="p-4"><a href="blog">Blog</a></h2></li>
       </ol>
     </nav>
   </section>
 
-  <section class="min-h-screen">
+  <section class="min-h-screen" id="projects">
     <h2 class="text-center py-8">Projects</h2>
     <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 w-full mx-auto gap-8 p-8">
       <Project
