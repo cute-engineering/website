@@ -37,30 +37,34 @@
       <Project
         title="cutekit"
         body="The magical build system and package manager for C and C++"
-        href="https://astro.build"
+        source="https://github.com/cute-engineering/cutekit"
       />
       <Project
         title="mu"
         body="A cool microkernel"
-        href="https://astro.build"
         logo="mumu.png"
+        source="https://github.com/cute-engineering/mu"
+
       />
       <Project
         title="libheap"
         body="A simple heap allocation library for hobby operating system"
-        href="https://astro.build"
+        logo="logo-libheap.svg"
+        source="https://github.com/cute-engineering/libheap"
       />
 
       <Project
-        title="cutekit"
-        body="A fresh approach to building websites."
-        href="https://astro.build"
+        title="tiny-json"
+        body="A simple json library written in C"
+        source="https://github.com/cute-engineering/tiny-json.git"
+        logo="logo-json.svg"
       />
 
       <Project
-        title="cutekit"
-        body="A fresh approach to building websites."
-        href="https://astro.build"
+        title="chatty"
+        body="A simple interface definition language"
+        source="https://github.com/cute-engineering/chatty"
+        logo="logo-chatty.svg"
       />
 
     </div>

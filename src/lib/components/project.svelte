@@ -2,8 +2,8 @@
 <script lang="ts">
     export let title = "Title";
     export let body = "Body";
-    export let  href: string|undefined = "https://astro.build";
-    export let  source: string|undefined = "https://astro.build";
+    export let href: string|undefined =  undefined;
+    export let source: string|undefined = undefined;
     export let logo = "cutekit-logo.png"
 </script>
 
