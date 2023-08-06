@@ -1,13 +1,9 @@
 <script lang="ts">
-    import s from "../../../static/dizzy.svg"
 </script>
 
-<div class={"dizzy-bg-st "+ $$props.class}>
-
-
+<section class={"dizzy-bg-st "+ $$props.class}>
     <slot />
-
-</div>
+</section>
 
 <style>
     .dizzy-bg-st {
@@ -16,10 +12,7 @@
         background-size: contain;
         background-position: center;
         background-origin: content-box;
-
-  background-blend-mode: hard-light;
-
-
+        background-blend-mode: hard-light;
     }
 
 

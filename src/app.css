@@ -16,6 +16,10 @@
 
   @layer base {
      
+    main {
+      @apply min-h-screen;
+      
+    }
     html {
    font-family: Fredoka, Inter, system-ui, sans-serif;
       line-height: 1.5;

@@ -1,12 +1,10 @@
 
 <script lang="ts">
-  import Lottie from "lottie-web";
+  import Lottie from "lottie-web"
 	import type {  AnimationItem} from "lottie-web";
-
 
   let element: HTMLDivElement|undefined = undefined;
   let animation: AnimationItem|undefined = undefined;
-  
   
   $: if(element != undefined) animation = Lottie.loadAnimation({
     container: element,
@@ -16,10 +14,8 @@
     path: "logo-animate.json"
   });
 
-
   /* replay animation on click */
   function handleClick() {
-
     if(animation != undefined && animation.isPaused)
     {
       animation.goToAndPlay(90, true);

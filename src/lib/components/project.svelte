@@ -1,20 +1,20 @@
 
 <script lang="ts">
-	// Start: Local Imports
-	// Models
     export let title = "Title";
     export let body = "Body";
     export let  href: string|undefined = "https://astro.build";
     export let  source: string|undefined = "https://astro.build";
-
-
     export let logo = "cutekit-logo.png"
-	// End: Exported Properties
-
 </script>
 
 <div
-  class="  background-amber-500  bg-gradient-to-b p-8 h-full  w-full rounded-[3rem] overflow-hidden"
+  class="background-amber-500 
+         bg-gradient-to-b 
+         p-8 
+         h-full
+         w-full 
+         rounded-[3rem]
+         overflow-hidden"
 >
 
   <img src={logo} class="mx-auto w-[200px] h-[200px]" alt={"project " + title + " logo"} />
