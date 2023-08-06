@@ -64,7 +64,7 @@
         title="chatty"
         body="A simple interface definition language"
         source="https://github.com/cute-engineering/chatty"
-        logo="logo-chatty.svg"
+        logo="logo-chatty.png"
       />
 
     </div>
