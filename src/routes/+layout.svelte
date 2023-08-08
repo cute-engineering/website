@@ -1,10 +1,14 @@
 
 <script>
+	import { preparePageTransition } from "$lib/transition";
   import "../app.css";
+  preparePageTransition();
 </script>
 
-<slot />
 
+<div class="min-h-screen">
+<slot />
+</div>
 <footer class="flex space-x-16 w-fit mx-auto py-8">
   <div class="">
     <h4 class="text-center">Contact</h4>
