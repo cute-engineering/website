@@ -1,12 +1,15 @@
 <script lang="ts">
+	import TopBar from "$lib/components/top-bar.svelte";
+
 	export let data: PageServerData;
 
 </script>
 
+<TopBar/>
 <main class="p-8">
 	<div class="max-w-prose mx-auto">
 		{#each data.posts as post}
-			<div class="rounded-xl overflow-hidden max-w-[500px] vimg">
+			<div class="rounded-xl overflow-hidden max-w-[500px] vimg ">
 				<img
 					src={post.cover}
 					alt={post.title}

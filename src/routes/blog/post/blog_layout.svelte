@@ -1,4 +1,6 @@
 <script>
+	import TopBar from "$lib/components/top-bar.svelte";
+
 	export let title = '';
 	export let description = '';
 	export let date = '';
@@ -7,8 +9,8 @@
 	 let id = title.replace(/\s/g, '-').toLowerCase();;
 </script>
 
+<TopBar/>
 <main class="p-8 m-8">
-	<a href="/blog/"> blogs </a>
 
 	<img
 		src={'/' + cover}
