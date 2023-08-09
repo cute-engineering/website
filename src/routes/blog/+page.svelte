@@ -1,18 +1,20 @@
 <script lang="ts">
 	export let data: PageServerData;
+
 </script>
 
 <main class="p-8">
 	<div class="max-w-prose mx-auto">
 		{#each data.posts as post}
-			<div class="rounded-xl overflow-hidden max-w-[500px]">
+			<div class="rounded-xl overflow-hidden max-w-[500px] vimg">
 				<img
 					src={post.cover}
 					alt={post.title}
 					width="500px"
 					height="300px"
-					style:--tag="cover"
 					class="cpaint"
+
+				style="--t-id:{post.title.replace(/\s/g, '-').toLowerCase()}"
 				/>
 
 				<div class="p-3">
@@ -24,3 +26,9 @@
 		{/each}
 	</div>
 </main>
+
+<style>
+	img {
+		view-transition-name: var(--t-id);
+	}
+</style>
