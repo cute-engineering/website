@@ -1,7 +1,6 @@
 import { beforeNavigate } from '$app/navigation';
 import { navigating } from '$app/stores';
 import { onDestroy } from 'svelte';
-import { tick } from 'svelte';
 
 function getNavigationStore() {
 	let callbacks: ((val?: any) => void)[] = [];
@@ -31,22 +30,3 @@ function getNavigationStore() {
 
 	return navigation;
 }
-
-export const preparePageTransition = () => {
-	const navigation = getNavigationStore();
-
-	// before navigating, start a new transition
-	beforeNavigate(() => {
-
-        console.log("hey hey")
-		if (!document.startViewTransition) {
-			return;
-		}
-		const navigationComplete = navigation.complete();
-        
-        
-		document.startViewTransition(async () => {
-			await navigationComplete;
-		});
-	});
-};
